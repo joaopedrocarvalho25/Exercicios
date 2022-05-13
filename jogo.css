@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+h1{
+    text-align: center;
+    text-shadow: 5px 5px 5px red;
+    color: rgb(221, 221, 10);
+    grid-column: 2;
+}
+img{
+    max-width: 100%;
+    box-shadow: rgb(9, 9, 109) 4px 4px 4px;
+}
+article img{
+box-shadow: red 4px 4px 4px;
+}
+section{
+    grid-column: 2;
+    
+}
+aside{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: center;
+    color: white;
+    box-shadow: blue 4px 4px 4px;
+}
+h2{
+    text-align: center;
+    color: rgb(33, 9, 121);
+    text-decoration: underline red;
+    grid-row: 2;
+}
+article{
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+    justify-content: center;
+    box-shadow: red 4px 4px 4px;
+}
+
+.ativou{
+    box-shadow: rgb(171, 247, 30) 4px 4px 4px;
+}
+.saiu{
+    box-shadow: rgb(9, 9, 109) 4px 4px 4px;
+}
+
+.div{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    justify-content: center;
+    color: white;
+}
