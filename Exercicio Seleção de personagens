@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CHARACTER SELECT</h1>
+    
+    <section>
+        <img src="capitao.webp" alt="" width="220px">
+        <img src="download.jfif" alt="" width="220px">
+        <img src="homemdeferro.jpg" alt="" width="220px">
+        <img src="marvel-avengers-thor.jpg" alt="" width="220px">
+        <img src="Viúva-Negra.jpg" alt="" width="220px">
+        <img src="gaviao.jpg" alt="" width="220px">
+        <img src="thanos.jfif" alt="" width="220px">
+        <img src="spider.png" alt="" width="220px">
+    
+    </section>
+    <aside>
+        <h2>JP1</h2>
+       
+    </aside>
+    <article>
+        <img src="avatararanha.png" alt="" width="450px" height="450px">
+        <h2>JP2</h2>
+    </article>
+</body>
+<link rel="stylesheet" href="jogo.css">
+<script>
+    const divi = document.querySelector('article')
+    const fotos = document.querySelector('img')
+    const hulk = document.querySelectorAll('img')[1]
+    const ferro = document.querySelectorAll('img')[2]
+    const thor = document.querySelectorAll('img')[3]
+    const viuva = document.querySelectorAll('img')[4]
+    const gaviao = document.querySelectorAll('img')[5]
+    const thanos = document.querySelectorAll('img')[6]
+    const aranha = document.querySelectorAll('img')[7]
+    const aside = document.querySelector('aside')
+    function ativar(){
+       aside.innerHTML = ` <img src="avatarcapitao.png" alt="" width="450px" height="450px">` + `<h2>JP1</h2>` 
+       
+      
+    }
+    function ativar1(){
+        aside.innerHTML = ` <img src="hulkavatar.jfif" alt="" width="450px" height="450px">` +  `<h2>JP1</h2>` 
+        
+    }
+    function ativar2(){
+        aside.innerHTML = ` <img src="avatarferro.png" alt=""  width="450px" height="450px">` + `<h2>JP1</h2>` 
+    }
+    function ativar3(){
+        aside.innerHTML = `<img src="thor.jfif" alt=""width="400px" height="450px">` + `<h2>JP1</h2>` 
+    }
+    function ativar4(){
+        aside.innerHTML = ` <img src="avatarviuva.png" alt=""  width="450px" height="450px">` + `<h2>JP1</h2>` 
+    }
+    function ativar5(){
+        aside.innerHTML = ` <img src="av.webp" alt="" width="450px" height="450px">` + `<h2>JP1</h2>` 
+    }
+    function ativar6(){
+        aside.innerHTML = ` <img src="avatarthanos.jfif" alt="" width="400px" height="450px"> ` + `<h2>JP1</h2>` 
+    }
+    function ativar7(){
+        aside.innerHTML = `<img src="avatararanha.png" alt="" width="450px" height="450px">` + `<h2>JP1</h2>` 
+        
+    }
+    fotos.addEventListener('mouseenter', ativar)
+    hulk.addEventListener('mouseenter', ativar1)
+    ferro.addEventListener('mouseenter', ativar2)
+    thor.addEventListener('mouseenter', ativar3)
+    viuva.addEventListener('mouseenter', ativar4)
+    gaviao.addEventListener('mouseenter', ativar5)
+    thanos.addEventListener('mouseenter', ativar6)
+    aranha.addEventListener('mouseenter', ativar7)
+    function moveu1(){
+        fotos.classList.toggle('ativou')
+        aside.innerHTML = `<img src="avatarcapitao.png" alt="" width="450px" height="450px">` + `<h2>JP1</h2>`
+    }
+    function saiu1(){
+        fotos.classList.toggle('saiu')
+        
+    }
+    function clicou1(){
+        fotos.style.boxShadow = `red 4px 4px 4px`
+    }
+    fotos.addEventListener('click', clicou1)
+    fotos.addEventListener('mouseover', moveu1)
+    fotos.addEventListener('mouseleave', saiu1)
+    function moveu(){
+        hulk.classList.toggle('ativou')
+    }
+    function saiu(){
+        hulk.classList.toggle('saiu')
+    }
+    function clicou2(){
+        hulk.style.boxShadow = `red 4px 4px 4px`
+    }
+    hulk.addEventListener('click', clicou2)
+    hulk.addEventListener('mouseover', moveu)
+    hulk.addEventListener('mouseleave', saiu)
+    
+    function moveu2(){
+        ferro.classList.toggle('ativou')
+    }
+    function saiu2(){
+        ferro.classList.toggle('saiu')
+    }
+    function clicou3(){
+        ferro.style.boxShadow = `red 4px 4px 4px`
+    }
+    ferro.addEventListener('click', clicou3)
+    ferro.addEventListener('mouseover', moveu2)
+    ferro.addEventListener('mouseleave', saiu2)
+    function moveu3(){
+        thor.classList.toggle('ativou')
+    }
+    function saiu3(){
+        thor.classList.toggle('saiu')
+    }
+    function clicou4(){
+        thor.style.boxShadow = `red 4px 4px 4px`
+    }
+    thor.addEventListener('click', clicou4)
+    thor.addEventListener('mouseover', moveu3)
+    thor.addEventListener('mouseleave', saiu3)
+    function moveu4(){
+        viuva.classList.toggle('ativou')
+    }
+    function saiu4(){
+        viuva.classList.toggle('saiu')
+    }
+    function clicou5(){
+       viuva.style.boxShadow = `red 4px 4px 4px` 
+    }
+    viuva.addEventListener('click', clicou5)
+    viuva.addEventListener('mouseover', moveu4)
+    viuva.addEventListener('mouseleave', saiu4)
+    function moveu5(){
+        gaviao.classList.toggle('ativou')
+    }
+    function saiu5(){
+        gaviao.classList.toggle('saiu')
+    }
+    function clicou6(){
+        gaviao.style.boxShadow = `red 4px 4px 4px`
+    }
+    gaviao.addEventListener('click', clicou6)
+    gaviao.addEventListener('mouseover', moveu5)
+    gaviao.addEventListener('mouseleave', saiu5)
+    function moveu6(){
+        thanos.classList.toggle('ativou')
+    }
+    function saiu6(){
+        thanos.classList.toggle('saiu')
+    }
+    function clicou7(){
+        thanos.style.boxShadow = `red 4px 4px 4px`
+    }
+    thanos.addEventListener('click', clicou7)
+    thanos.addEventListener('mouseover', moveu6)
+    thanos.addEventListener('mouseleave', saiu6)
+    function moveu7(){
+        aranha.classList.toggle('ativou')
+    }
+    function saiu7(){
+        aranha.classList.toggle('saiu')
+    }
+    function clicou8(){
+        aranha.style.boxShadow = `red 4px 4px 4px`
+        aranha.classList.toggle('saiu')
+        
+    }
+    aranha.addEventListener('click', clicou8)
+    aranha.addEventListener('mouseover', moveu7)
+    aranha.addEventListener('mouseout', saiu7)
+</script>
+</html>
